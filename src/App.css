@@ -1949,7 +1949,7 @@ body {
 .faq__p {
   color: var(--Grey-1, #0F0F0F);
   font-family: Poppins;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -2034,7 +2034,7 @@ body {
 }
 
 .footer_con {
-  margin-top: 70px;
+  margin-top: 122px;
   padding: 24px 10px 10px 25px;
 }
 
@@ -2097,7 +2097,6 @@ body {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
 }
 
@@ -2106,6 +2105,33 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 16px;
+}
+.got_ques span{
+  margin-bottom: 6px;
+}
+.icon_foot svg {
+  height: 30px;
+  width: 30px;
+}
+.footer_card p{
+  margin-bottom: 8px;
+}
+.conversation{
+  display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.whatsapp{
+  width: 100%;
+}
+.email{
+  width: 76%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .margin-top-97 {
@@ -2275,8 +2301,21 @@ padding: 8px;
 
 }
 
-/* big size devices */
-@media only screen and (min-width:768px) and (max-width:1024px) {}
-
-/* mediam size deives */
-@media only screen and (min-width:600px) and (max-width:768px) {}
+.text-center{
+  text-align: start !important;
+}
+.foot_loc {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.copy_right{
+  height: 62px;
+    background: #212121;
+    color: #ffffff6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location_p {
+  width:74%;
+}

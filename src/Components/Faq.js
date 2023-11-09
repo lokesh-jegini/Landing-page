@@ -105,20 +105,22 @@ function Faq() {
             <scetion className="faq__box">
                 <Container className="faq_box">
                     <Row>
-                        <Col sm={7} md={6} xs={12} className="abso_col">
+                        <Col sm={7} md={6} xs={12} className="abso_col col-xl-7">
                             <div className="faq_p">
                                 Start a conversation
                                 <p className="faq__p">Our help and support teams are available to talk with you</p>
                             </div>
                         </Col>
-                        <Col sm={3} md={3} xs={12} className="pt-4" >
-                            <button className='sub_button_faq_wa btn btn-sm bg-lite'>
+                        <div className="conversation col-xl-5">
+                        <Col >
+                            <button className='sub_button_faq_wa btn btn-sm bg-lite whatsapp'>
                                 <Image src="./assets/caroselimg/Frame (1).png" alt="icon" /> Send us a Message
                             </button>
                         </Col>
-                        <Col sm={3} md={3} xs={12} className="pt-4">
-                            <button type="button" className="sub_button_faq btn sub_btn_res">Email Us</button>
+                        <Col  className="col-5">
+                            <button type="button" className="sub_button_faq btn sub_btn_res email">Email Us</button>
                         </Col>
+                        </div>
                     </Row>
                 </Container>
 

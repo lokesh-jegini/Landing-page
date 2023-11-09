@@ -7,11 +7,12 @@ import { faXTwitter, faYoutube, faInstagram, faFacebook } from '@fortawesome/fre
 
 function Footer() {
     return (
+        <>
         <Container fluid  className='footer_bak '>
                 <Container className='footer_con text-center' >
                     <Row>
-                        <Col>
-                            <div>
+                        <Col >
+                            <div class="d-flex flex-column  got_ques">
                                 <h6 class="footer_heading text-center text-uppercase fw-bold mb-4 ">
                                     Got Questions?
                                 </h6>
@@ -31,8 +32,8 @@ function Footer() {
                                 </p>
                             </div>
                         </Col>
-                        <Col>
-                            <div>
+                        <Col className='footer_card'>
+                            <div class="d-flex flex-column  ">
                                 <h6 class=" footer_heading text-uppercase fw-bold mb-4">
                                     About Us
                                 </h6>
@@ -57,8 +58,8 @@ function Footer() {
 
                             </div>
                         </Col>
-                        <Col>
-                            <div>
+                        <Col className='footer_card'>
+                            <div class="d-flex flex-column  " >
                                 <h6 class=" footer_heading text-uppercase fw-bold mb-4">
                                     Courses
                                 </h6>
@@ -79,8 +80,8 @@ function Footer() {
                                 </p>
                             </div>
                         </Col>
-                        <Col>
-                            <div>
+                        <Col  className='footer_card'>
+                            <div class="d-flex flex-column  ">
                                 <h6 class=" footer_heading text-uppercase fw-bold mb-4">
                                     Services
                                 </h6>
@@ -98,12 +99,12 @@ function Footer() {
                     </Row>
                     {/* social icons */}
                     <Row>
-                        <Col md={5} sm={5} xs={12} className='location bg_color '>
-                            <span >Location</span>
-                            <p>Brahmaputra Exam Success Support Team Private Limited
+                        <Col md={5} sm={5} xs={12} className='location bg_color col-xl-6'>
+                            <span class="foot_loc" >Location</span>
+                            <p className="location_p">Brahmaputra Exam Success Support Team Private Limited
                                 37, 2nd bye lane B.R.Mazumdar Path Baghorbori, Panjabari Guwahati-781037 Assam</p>
                         </Col>
-                        <Col md={3} sm={3} xs={12} >
+                        <Col md={3} sm={3} xs={12} col-xl-3 className=' col-xl-3'>
                             <div >
                                 <span className='bg_color'>Follow Our Social</span>
                                 <p className='icon_foot '>
@@ -122,7 +123,7 @@ function Footer() {
                                 </p>
                             </div>
                         </Col>
-                        {/* <Col md={3} sm={3} xs={12} ><span className="store_head bg_color " >Get our Mobile App</span>
+                         <Col md={3} sm={3} xs={12}  className=' col-xl-3 p-0'><span className="store_head bg_color " >Get our Mobile App</span>
                             <div class="clearfix">
                                 <div class="foot_box">
                                     <Image src="./assets/caroselimg/90c1f307f769b7e6ccb573c442a67dde.png" alt="QRcode" width={120} height={120} />
@@ -138,18 +139,21 @@ function Footer() {
                                     </span>
                                 </div>
                             </div>
-                        </Col> */}
+                        </Col> 
                     </Row>
                     {/* copywrite */}
-                    <Row>
-                        <Col sm={4} md={12} xs={12}>
-                            <div className="text-center bg_color padding_tb_5_px">
+                    
+                </Container>
+                
+        </Container>
+        <div class="copy_right">
+                     
+                            <div>
                                 Copyright © 2023 BESST (Brahmaputra Exam Success Support Team)
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
-        </Container>
+                       
+                    </div>
+    </>
 
     )
 };
